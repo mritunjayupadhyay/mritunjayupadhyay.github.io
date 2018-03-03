@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Google OAuth Node Express MongoDB!"
+title:  "Google OAuth Node Express MongoDB"
 date:   2018-02-21 17:49:00 +0530
 category: google-oauth
 ---
