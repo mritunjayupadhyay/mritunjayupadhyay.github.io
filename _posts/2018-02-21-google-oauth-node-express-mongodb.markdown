@@ -38,7 +38,7 @@ Here we will use [passport.js]({{ site.baseurl }}{% post_url 2018-02-21-passport
 {% endhighlight %}
 
 
-We will go in `https://console.developers.google.com` and create a project(I have made emaily-google-auth). While configuring this app choose Oauth/ClientID and configure consent screen( it is used for asking user permission). This step are self-explanatory. Here you will get two field. One is `Authorized JavaScript origins`. As name suggest domain name or basic route url should be written here. If you are running your program at localhost(assume at port 3000) then write `http://localhost:3000`.
+We will go in `https://console.developers.google.com` and create a project(I have made emaily-google-auth). While configuring this app choose Oauth/ClientID and configure consent screen( it is used for asking user permission). Enable google+ api. These step are self-explanatory. Here you will get two field. One is `Authorized JavaScript origins`. As name suggest domain name or basic route url should be written here. If you are running your program at localhost(assume at port 3000) then write `http://localhost:3000`.
 Another one is `Authorized redirect URIs`. As name suggest all uri which you want as authourized write here. This time write just `http://localhost:3000/*`, which means all uri at server. We will talk about this later.
 
 
@@ -89,9 +89,4 @@ Now here this code (`passport.authenticate('google')`) is responsible for taking
 
 Now our task is to save this user data in database(MongoDB). For this you can follow [next part]({{ site.baseurl }}{% post_url 2018-02-26-google-oauth-node-express-mongodb-part2 %}) 
 
-If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
-[sub-cat-link]: http://localhost:4000/category/google-oauth.html
